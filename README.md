@@ -187,8 +187,13 @@ The following were tested locally:
 - Successful build
 - Passing unit tests
 
-## Notes
+## Screenshots
 
-This repository contains the backend solution for the Product Inventory Management technical assessment.
+<img width="1919" height="904" alt="image" src="https://github.com/user-attachments/assets/4b0ea103-17e8-4ca8-b0d8-0474ff419aa5" />
 
-No real passwords, JWT secrets, refresh tokens or personal credentials should be committed.
+<img width="1919" height="933" alt="image" src="https://github.com/user-attachments/assets/b8ad3414-46e7-4e98-ad47-0681f6b31d2e" />
+
+<img width="1095" height="815" alt="image" src="https://github.com/user-attachments/assets/2961a504-79c6-46b4-8716-731912af956c" />
+
+<img width="1088" height="849" alt="image" src="https://github.com/user-attachments/assets/bbaeef7e-a4df-454d-bb84-00dbb0255d56" />
+
