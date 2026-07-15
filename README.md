@@ -33,24 +33,69 @@ A RESTful backend API for managing products and inventory quantities, developed 
 
 ## Project Structure
 
+## Project Structure
+
+```
 ProductInventoryManagement/
-  backend/
-    src/
-      ProductInventory.API/
-      ProductInventory.Application/
-      ProductInventory.Domain/
-      ProductInventory.Infrastructure/
-    tests/
-      ProductInventory.API.Tests/
-      ProductInventory.Application.Tests/
-      ProductInventory.Infrastructure.Tests/
-    Dockerfile
-    ProductInventory.sln
-  docker-compose.yml
-  .env.example
-  .gitignore
-  global.json
-  README.md
+├── backend/
+│   ├── src/
+│   │   ├── ProductInventory.API/
+│   │   │   ├── Controllers/
+│   │   │   ├── Extensions/
+│   │   │   ├── Middleware/
+│   │   │   ├── Configuration/
+│   │   │   ├── appsettings.json
+│   │   │   ├── appsettings.Development.json
+│   │   │   └── Program.cs
+│   │   │
+│   │   ├── ProductInventory.Application/
+│   │   │   ├── Common/
+│   │   │   │   ├── Interfaces/
+│   │   │   │   └── Models/
+│   │   │   ├── DTOs/
+│   │   │   │   ├── Auth/
+│   │   │   │   ├── Items/
+│   │   │   │   └── Products/
+│   │   │   ├── Interfaces/
+│   │   │   ├── Services/
+│   │   │   ├── Validators/
+│   │   │   └── DependencyInjection.cs
+│   │   │
+│   │   ├── ProductInventory.Domain/
+│   │   │   ├── Common/
+│   │   │   └── Entities/
+│   │   │       ├── AppUser.cs
+│   │   │       ├── Item.cs
+│   │   │       ├── Product.cs
+│   │   │       └── RefreshToken.cs
+│   │   │
+│   │   └── ProductInventory.Infrastructure/
+│   │       ├── Data/
+│   │       │   ├── Configurations/
+│   │       │   ├── Migrations/
+│   │       │   ├── Repositories/
+│   │       │   ├── ApplicationDbContext.cs
+│   │       │   ├── DatabaseSeeder.cs
+│   │       │   └── UnitOfWork.cs
+│   │       ├── Identity/
+│   │       │   └── AuthService.cs
+│   │       └── DependencyInjection.cs
+│   │
+│   ├── tests/
+│   │   ├── ProductInventory.API.Tests/
+│   │   ├── ProductInventory.Application.Tests/
+│   │   └── ProductInventory.Infrastructure.Tests/
+│   │
+│   ├── Dockerfile
+│   ├── .dockerignore
+│   └── ProductInventory.sln
+│
+├── .env.example
+├── .gitignore
+├── docker-compose.yml
+├── global.json
+└── README.md
+```
 
 ## API Endpoints
 
